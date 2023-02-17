@@ -27,9 +27,9 @@ Realiza las siguientes tareas. Cada una de las tareas conlleva al menos un commi
 #### 16) Despliegue en remoto
 
 ## TODO:
-- [ ] Usuarios
-- [ ] Post
-- [ ] Comment
+- [x] Usuarios
+- [x] Post
+- [x] Comment
 - [ ] Puntuar comentarios (likes) - Comments y Post
 - [ ] Comunities (Temática) 
 - [ ] Autorizaciones
