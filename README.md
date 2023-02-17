@@ -37,7 +37,7 @@ Realiza las siguientes tareas. Cada una de las tareas conlleva al menos un commi
   - [ ] Autentificado - crear post, comments, comunities
 - [ ] Roles
   - [ ] Moderado
-  - [ ] Regsitrado
+  - [ ] Registrado
   - [ ] Invitado
 - [ ] Postman
 - [ ] Tesing con Laravel
