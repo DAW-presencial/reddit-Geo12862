@@ -8,7 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class Post extends Model
 {
     use HasFactory;
-
+    protected $fillable = [
+        'titulo',
+        'extracto',
+        'contenido',
+        'cadicable',
+        'comentable',
+        'acceso'
+    ];
+    
     //Relaciones  Comments 1:N Posts
     public function comments()
     {
