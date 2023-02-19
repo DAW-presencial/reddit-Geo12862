@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Comment;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Js;
 
 class CommentController extends Controller
 {
@@ -15,7 +16,8 @@ class CommentController extends Controller
      */
     public function index()
     {
-        //
+        $comments = Comment::all();
+        return response()->json($comments);
     }
 
     /**
@@ -36,7 +38,15 @@ class CommentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $comment = new Comment;
+        $comment->name = $request->name;
+        $comment->coment = $request->coment;
+        $comment->save();
+        $data = [
+            'message' => 'Comment creado correctamente',
+            'comment' => $comment
+        ];
+        return response()->json($data);
     }
 
     /**
@@ -47,7 +57,7 @@ class CommentController extends Controller
      */
     public function show(Comment $comment)
     {
-        //
+        return response()->json($comment);
     }
 
     /**
@@ -70,7 +80,14 @@ class CommentController extends Controller
      */
     public function update(Request $request, Comment $comment)
     {
-        //
+        $comment->name = $request->name;
+        $comment->coment = $request->coment;
+        $comment->save();
+        $data = [
+            'message' => 'Comment actualizado correctamente',
+            'comment' => $comment
+        ];
+        return response()->json($data);
     }
 
     /**
@@ -81,6 +98,11 @@ class CommentController extends Controller
      */
     public function destroy(Comment $comment)
     {
-        //
+        $comment->delete();
+        $data = [
+            'message' => 'Comment eliminado correctamente',
+            'comment' => $comment
+        ];
+        return response()->json($data);
     }
 }

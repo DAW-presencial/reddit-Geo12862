@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('communities', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->text('descrption');
+            $table->text('description');
             $table->timestamps();
         });
     }

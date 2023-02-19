@@ -8,6 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Community extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'name',
+        'description'
+    ];
 
     //Relaciones
     //Relación Communities 1:N Posts
