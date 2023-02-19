@@ -15,7 +15,8 @@ class CommunityController extends Controller
      */
     public function index()
     {
-        //
+        $communities = Community::all();
+        return response()->json($communities);
     }
 
     /**
@@ -36,7 +37,15 @@ class CommunityController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $community = new Community;
+        $community->name = $request->name;
+        $community->description = $request->description;
+        $community->save();
+        $data = [
+            'message' => 'Community creada correctamente',
+            'community' => $community
+        ];
+        return response()->json($data);
     }
 
     /**
@@ -47,7 +56,7 @@ class CommunityController extends Controller
      */
     public function show(Community $community)
     {
-        //
+        return response()->json($community);
     }
 
     /**
@@ -70,7 +79,14 @@ class CommunityController extends Controller
      */
     public function update(Request $request, Community $community)
     {
-        //
+        $community->name = $request->name;
+        $community->description = $request->description;
+        $community->save();
+        $data = [
+            'message' => 'Community actualizada correctamente',
+            'community' => $community
+        ];
+        return response()->json($data);
     }
 
     /**
@@ -81,6 +97,11 @@ class CommunityController extends Controller
      */
     public function destroy(Community $community)
     {
-        //
+        $community->delete();
+        $data = [
+            'message' => 'Community eliminada correctamente',
+            'community' => $community
+        ];
+        return response()->json($data);
     }
 }
