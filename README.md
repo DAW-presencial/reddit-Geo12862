@@ -22,9 +22,9 @@ Realiza las siguientes tareas. Cada una de las tareas conlleva al menos un commi
 ### Autoización con Bearer Token
 - [ ] 12) Crea un controlador para asignar tokens bajo demanda.                                           
 - [ ] 13) Añade autenticación con Bearer Token a los endpoints del apartado 1)                            
-- [ ] #### 14) Crea con Postman las peticiones del apartado 1)                                            
-- [ ] #### 15) Subida a GitHub                                                                            
-- [ ] #### 16) Despliegue en remoto                                                                       
+- [ ] 14) Crea con Postman las peticiones del apartado 1)                                            
+- [x] 15) Subida a GitHub                                                                            
+- [ ] 16) Despliegue en remoto                                                                       
 
 ------------------------------------------------------------------------------------------
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
