@@ -38,3 +38,15 @@ Route::post('/communities', 'App\Http\Controllers\CommunityController@store');
 Route::get('/communities/{community}', 'App\Http\Controllers\CommunityController@show');
 Route::put('/communities/{community}', 'App\Http\Controllers\CommunityController@update');
 Route::delete('/communities/{community}', 'App\Http\Controllers\CommunityController@destroy');
+
+//CRUD relaciones con posts
+Route::get('/posts/{post}/comments', 'App\Http\Controllers\PostController@comments');
+Route::get('/communities/{community}/posts', 'App\Http\Controllers\CommunityController@posts');
+Route::get('/posts/{post}/community', 'App\Http\Controllers\PostController@community');
+Route::get('/comments/{comment}/post', 'App\Http\Controllers\CommentController@post');
+
+//CRUD relaciones con users
+Route::get('/users/{user}/posts', 'App\Http\Controllers\UserController@posts');
+Route::get('/users/{user}/comments', 'App\Http\Controllers\UserController@comments');
+Route::get('/users/{user}/communities', 'App\Http\Controllers\UserController@communities');
+Route::get('/communities/{community}/users', 'App\Http\Controllers\CommunityController@users');
