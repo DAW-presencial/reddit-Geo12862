@@ -50,3 +50,9 @@ Route::get('/users/{user}/posts', 'App\Http\Controllers\UserController@posts');
 Route::get('/users/{user}/comments', 'App\Http\Controllers\UserController@comments');
 Route::get('/users/{user}/communities', 'App\Http\Controllers\UserController@communities');
 Route::get('/communities/{community}/users', 'App\Http\Controllers\CommunityController@users');
+
+//Assign token
+Route::post('/users/{user}/token', 'App\Http\Controllers\ApiTokenController@assignToken');
+Route::get('/posts/{posts}/token', 'App\Http\Controllers\ApiTokenController@assignToken');
+Route::get('/comments/{comments}/token', 'App\Http\Controllers\ApiTokenController@assignToken');
+Route::get('/communities/{communities}/token', 'App\Http\Controllers\ApiTokenController@assignToken');
