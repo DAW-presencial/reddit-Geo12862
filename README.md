@@ -26,31 +26,6 @@ Realiza las siguientes tareas. Cada una de las tareas conlleva al menos un commi
 #### 15) Subida a GitHub
 #### 16) Despliegue en remoto
 
-## TODO:
-- [x] Usuarios
-- [x] Post
-- [x] Comment
-- [ ] Puntuar comentarios (likes) - Comments y Post
-- [ ] Comunities (Temática) 
-- [ ] Autorizaciones
-  - [ ] Guest - Solo puede ver post y comentarios (leer)
-  - [ ] Autentificado - crear post, comments, comunities
-- [ ] Roles
-  - [ ] Moderado
-  - [ ] Registrado
-  - [ ] Invitado
-- [ ] Postman
-- [ ] Tesing con Laravel
-- [ ] JavaScript
-  - [ ] Crear endpoint
-- [ ] VUE
-  - [ ] Listar comunidades
-  - [ ] Listar posts
-  - [ ] Listar comentarios de un post
-- [ ] Para el Redit
-  - [ ] Crear (Comunities, Post, Comments)
-  - [ ] Delete (Comunities, Post, Comments)
-
 ------------------------------------------------------------------------------------------
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
