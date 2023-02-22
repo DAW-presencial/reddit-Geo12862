@@ -7,24 +7,24 @@ La practica consiste en crear y probar una APIRest para una aplicación basada e
 Realiza las siguientes tareas. Cada una de las tareas conlleva al menos un commit, en el que figure un mensaje indicando el punto realizado y si está completa o parcialmente realizado.
 
 ### CRUD's APIRest
-1) Definición de los puntos de entrada siguientes (enpoints): CRUD sobre una Community
-2) Definición de los puntos de entrada siguientes: CRUD sobre un Post
-3) Definición de los puntos de entrada siguientes: CRUD sobre un Comment
+1) Definición de los puntos de entrada siguientes (enpoints): CRUD sobre una Community              [v]
+2) Definición de los puntos de entrada siguientes: CRUD sobre un Post                               [v]
+3) Definición de los puntos de entrada siguientes: CRUD sobre un Comment                            [v]
 ### Test en Laravel 
-4) Test para: public function can_fetch_all_communities()
-5) Test para: public function can_fetch_single_communities()
-6) Test para: public function name_of_communities_is_required()
-7) Test para: public function can_create_community()
-8) Test para: public function guests_cannot_create_community()
-9) Test para: public function can_update_community()
-10) Test para: public function can_delete_community()
-11) Test para: public function can_returns_a_json_api_error_object_when_a_community_is_not_found()
+4) Test para: public function can_fetch_all_communities()                                           [v]
+5) Test para: public function can_fetch_single_communities()                                        []
+6) Test para: public function name_of_communities_is_required()                                     []
+7) Test para: public function can_create_community()                                                []
+8) Test para: public function guests_cannot_create_community()                                      []
+9) Test para: public function can_update_community()                                                []
+10) Test para: public function can_delete_community()                                               []
+11) Test para: public function can_returns_a_json_api_error_object_when_a_community_is_not_found()  []
 ### Autoización con Bearer Token
-12) Crea un controlador para asignar tokens bajo demanda.
-13) Añade autenticación con Bearer Token a los endpoints del apartado 1)
-#### 14) Crea con Postman las peticiones del apartado 1)
-#### 15) Subida a GitHub
-#### 16) Despliegue en remoto
+12) Crea un controlador para asignar tokens bajo demanda.                                           []
+13) Añade autenticación con Bearer Token a los endpoints del apartado 1)                            []
+#### 14) Crea con Postman las peticiones del apartado 1)                                            []
+#### 15) Subida a GitHub                                                                            []
+#### 16) Despliegue en remoto                                                                       []
 
 ------------------------------------------------------------------------------------------
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
