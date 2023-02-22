@@ -20,7 +20,7 @@ Realiza las siguientes tareas. Cada una de las tareas conlleva al menos un commi
 - [ ] 10) Test para: public function can_delete_community()                                               
 - [ ] 11) Test para: public function can_returns_a_json_api_error_object_when_a_community_is_not_found()  
 ### Autoización con Bearer Token
-- [ ] 12) Crea un controlador para asignar tokens bajo demanda.                                           
+- [x] 12) Crea un controlador para asignar tokens bajo demanda.                                           
 - [ ] 13) Añade autenticación con Bearer Token a los endpoints del apartado 1)                            
 - [ ] 14) Crea con Postman las peticiones del apartado 1)                                            
 - [x] 15) Subida a GitHub                                                                            
